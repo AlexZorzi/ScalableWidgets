@@ -28,8 +28,9 @@ android {
         applicationId = "com.owlynights.scalablecapitalwidgets"
         minSdk = 29
         targetSdk = 37
-        versionCode = 1
-        versionName = "1.0"
+        // Release builds on GitHub pass these from the release tag (v1.2.3 -> 1.2.3 / 10203).
+        versionCode = (project.findProperty("versionCode") as String?)?.toInt() ?: 1
+        versionName = project.findProperty("versionName") as String? ?: "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
