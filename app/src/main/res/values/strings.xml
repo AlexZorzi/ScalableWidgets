@@ -176,4 +176,15 @@
     <string name="privacy_crashes_summary">Technical details when something breaks, so it can be fixed</string>
     <string name="settings_privacy">Privacy</string>
     <string name="about_credit_firebase">Google · proprietary SDK, Firebase terms · optional usage statistics and crash reports</string>
+    <string name="official_title">Download only from GitHub</string>
+    <string name="official_intro">The only official place to get Scalable Widgets is its Releases page on GitHub. The app isn\'t published on the Play Store or any other app store.</string>
+    <string name="official_point_updates">New versions are published only there, each with a checksum to verify the download.</string>
+    <string name="official_point_copies">Copies from other stores, websites, chats or APK mirrors may be modified to steal your Scalable login. Don\'t install them.</string>
+    <string name="official_point_signature">Official builds are signed with the developer\'s key. Android refuses to install an update signed by anyone else over the official app.</string>
+    <string name="official_open">Open releases page</string>
+    <string name="official_status_ok">✓ This copy is an official build.</string>
+    <string name="official_status_unofficial">This copy is not signed with the official key. If you didn\'t build it yourself, uninstall it and get the app from GitHub.</string>
+    <string name="official_fingerprint">Signing certificate (SHA-256)</string>
+    <string name="about_official_entry">Official downloads</string>
+    <string name="about_official_summary">Only on GitHub Releases</string>
 </resources>

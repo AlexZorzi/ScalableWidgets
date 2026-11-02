@@ -82,6 +82,12 @@ fun AboutScreen(onBack: () -> Unit) {
         LicenseScreen(license, onBack = { openLicense = null })
         return
     }
+    var showOfficial by rememberSaveable { mutableStateOf(false) }
+    if (showOfficial) {
+        BackHandler { showOfficial = false }
+        OfficialSourceScreen(onBack = { showOfficial = false })
+        return
+    }
 
     val context = LocalContext.current
     Scaffold(
@@ -130,6 +136,15 @@ fun AboutScreen(onBack: () -> Unit) {
             }
 
             item { SupportCard(onOpen = { openLink(context, it) }) }
+
+            item {
+                AboutRow(
+                    icon = R.drawable.ic_download,
+                    title = stringResource(R.string.about_official_entry),
+                    subtitle = stringResource(R.string.about_official_summary),
+                    onClick = { showOfficial = true },
+                )
+            }
 
             item { SectionTitle(R.string.about_license_section) }
             item {

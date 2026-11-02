@@ -56,9 +56,9 @@ import kotlinx.coroutines.launch
 
 /**
  * Bump when the terms on the last page change, so everyone is asked to accept again.
- * 1: initial terms. 2: adds the analytics and crash report choices.
+ * 1: initial terms. 2: adds the analytics and crash report choices. 3: official download page.
  */
-const val TERMS_VERSION = 2
+const val TERMS_VERSION = 3
 
 private class IntroPage(
     @param:DrawableRes val icon: Int,
@@ -87,6 +87,7 @@ private val PAGES = listOf(
             R.drawable.ic_logout to R.string.intro_security_expiry,
         ),
     ),
+    IntroPage(R.drawable.ic_download, R.string.official_title, R.string.official_intro, OFFICIAL_SOURCE_POINTS),
     IntroPage(R.drawable.ic_favorite, R.string.intro_support_title, R.string.intro_support_body, emptyList()),
     IntroPage(
         R.drawable.ic_gavel, R.string.intro_terms_title, R.string.intro_terms_body,
@@ -228,6 +229,7 @@ fun OnboardingScreen(
                         }
                     }
                 }
+                if (page.icon == R.drawable.ic_download) OfficialSourceCard()
                 if (page.icon == R.drawable.ic_favorite) {
                     Card(
                         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.tertiaryContainer),
@@ -271,7 +273,7 @@ fun PrivacySwitch(
 }
 
 @Composable
-private fun Point(@DrawableRes icon: Int, @StringRes text: Int) {
+fun Point(@DrawableRes icon: Int, @StringRes text: Int) {
     Row(modifier = Modifier.padding(bottom = 18.dp), verticalAlignment = Alignment.Top) {
         Icon(
             painterResource(icon),
