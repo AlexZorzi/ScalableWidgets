@@ -31,9 +31,11 @@ B6:21:B7:F8:85:94:99:F7:06:CD:D1:EA:21:65:08:D7:41:AE:43:C9:C0:C6:DD:3C:36:B7:A5
 
 ## Setup
 
-1. On the Scalable website, enable **Profile → Security → Agentic Investing**.
-2. Open the app, tap **Connect**, confirm the code in the browser and approve the login on your phone if asked.
-3. Long-press your home screen and add the widgets.
+1. On the Scalable website, enable **Profile → Security → Agentic Investing** and enable CLI.
+   <img width="630" height="751" alt="image" src="https://github.com/user-attachments/assets/8db5dbe2-a297-463a-9049-900e88db9d58" />
+
+3. Open the app, tap **Connect**, confirm the code in the browser and approve the login on your phone if asked.
+4. Long-press your home screen and add the widgets.
 
 Scalable ends these sessions after seven days, so you'll need to sign in again once a week.
 
