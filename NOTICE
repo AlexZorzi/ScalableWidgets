@@ -1,0 +1,43 @@
+Scalable Widgets
+Copyright (C) 2026 Alex Zorzi
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option) any later
+version. See the LICENSE file for the full text.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Additional permission under GNU GPL version 3 section 7: if you modify this program,
+or any covered work, by linking or combining it with the Google Firebase SDKs (or a
+modified version of those libraries), containing parts covered by the terms of the
+Firebase / Google APIs Terms of Service, the licensor grants you additional permission
+to convey the resulting work.
+
+Not affiliated with, endorsed by or sponsored by Scalable Capital GmbH.
+"Scalable Capital" and the Scalable logo are trademarks of their respective owner.
+
+-------------------------------------------------------------------------------
+Third-party software
+-------------------------------------------------------------------------------
+
+Scalable CLI — https://github.com/ScalableCapital/scalable-cli
+  Copyright Scalable Capital GmbH. Licensed under the Apache License 2.0.
+  The API endpoints, OAuth device-code/DPoP login flow, GraphQL queries and the
+  logo mark in app/src/main/res/drawable/ic_scalable_logo.xml are derived from it.
+
+Android Jetpack (AndroidX: Core, Activity, Lifecycle, Compose, Material 3,
+Glance, WorkManager, Browser) — https://developer.android.com/jetpack
+  Copyright The Android Open Source Project. Licensed under the Apache License 2.0.
+
+Kotlin standard library and kotlinx.coroutines — https://kotlinlang.org
+  Copyright JetBrains s.r.o. and contributors. Licensed under the Apache License 2.0.
+
+Google Firebase Analytics and Crashlytics — https://firebase.google.com
+  Proprietary software by Google LLC, used under the Firebase terms
+  (https://firebase.google.com/terms). Only active when the build contains
+  app/google-services.json and the user has allowed it in the app.
+
+The Apache License 2.0 text is in app/src/main/res/raw/license_apache2.txt.
