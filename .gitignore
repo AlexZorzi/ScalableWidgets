@@ -13,3 +13,6 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Firebase config for your own builds; forks should use their own Firebase project (or none).
+/app/google-services.json
